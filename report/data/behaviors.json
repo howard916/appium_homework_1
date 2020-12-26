@@ -1,0 +1,26 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "打卡功能",
+    "children" : [ {
+      "name" : "外出打开功能",
+      "children" : [ {
+        "name" : "test_clock_off",
+        "uid" : "41acaf6db0781212",
+        "parentUid" : "fcad61c253f402f45a2f4c867bcaa0c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608959674772,
+          "stop" : 1608959694146,
+          "duration" : 19374
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fcad61c253f402f45a2f4c867bcaa0c5"
+    } ],
+    "uid" : "7239653214e05752a0304e2f93573e07"
+  } ]
+}

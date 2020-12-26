@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "howard-mac.local",
+    "children" : [ {
+      "name" : "13706-MainThread",
+      "children" : [ {
+        "name" : "test_clock_off",
+        "uid" : "41acaf6db0781212",
+        "parentUid" : "e583f273c0e220b2517c15af5ac6f704",
+        "status" : "passed",
+        "time" : {
+          "start" : 1608959674772,
+          "stop" : 1608959694146,
+          "duration" : 19374
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e583f273c0e220b2517c15af5ac6f704"
+    } ],
+    "uid" : "3031a265faee6d4628a0b97f8d601c4c"
+  } ]
+}
