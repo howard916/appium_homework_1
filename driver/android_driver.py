@@ -22,10 +22,16 @@ class Android:
         caps['noReset'] = 'true'
         caps['autoGrantPermissions'] = 'true'
         caps['settings[waitForIdleTimeout]'] = 0
+        caps['skipDeviceInitialization'] = 'true'
+        caps['unicodeKeyboard'] = 'true'
+        caps['resetKeyboard'] = 'true'
 
         # 判断当driver为空时, 则启动driver, 不为空时, 则忽略
-        if not cls.driver:
+        if cls.driver is None:
             host = cf.get('Appium', 'host')
             port = cf.get('Appium', 'port')
             cls.driver = webdriver.Remote(f'http://{host}:{port}/wd/hub', caps)
             cls.driver.implicitly_wait(5)
+        else:
+            cls.driver.launch_app()
+

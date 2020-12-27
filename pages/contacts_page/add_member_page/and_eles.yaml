@@ -1,0 +1,6 @@
+manual_add_bt: ['xpath', '//*[@text="手动输入添加"]']
+name_box: ['xpath', '//*[contains(@text,"姓名")]/..//*[contains(@class,"EditText")]']
+sex_select: ['xpath', '//*[contains(@text,"性别")]/..//*[@class="android.widget.RelativeLayout"]']
+sex_list: ['xpath', '//*[@text="%s" and @resource-id="com.tencent.wework:id/elq"]']
+phone_box: ['xpath', '//*[contains(@text,"手机")]/..//*[contains(@class,"EditText")]']
+save_bt: ['xpath', '//*[@text="保存"]']

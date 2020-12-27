@@ -10,18 +10,21 @@ cf = configparser.ConfigParser()
 cf.read(f'{project_path}/config.ini')
 
 class Driver:
-    driver: WebDriver = None
+    _driver: WebDriver = None
+    _device_type = None
 
     @classmethod
-    def start(cls):
+    def _start(cls):
         device_type = cf.get('Device', 'type')
-        if not cls.driver:
+        if not cls._driver:
             if device_type == 'Android':
                 Android.start()
-                cls.driver = Android.driver
+                cls._driver = Android.driver
+                cls._device_type = "Android"
             elif device_type == 'iOS':
                 iOS.start()
-                cls.driver = iOS.driver
+                cls._driver = iOS.driver
+                cls._device_type = "iOS"
             else:
                 print(f': Not accept device type -> {device_type}')
                 raise

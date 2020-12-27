@@ -1,0 +1,1 @@
+add_contacts_lk: ['xpath', '//*[@text="添加成员"]']

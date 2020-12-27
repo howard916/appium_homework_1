@@ -1,1 +1,2 @@
 tab_workbench: ['xpath', '//*[@text="工作台"]']
+tab_contacts: ['xpath', '//*[@text="通讯录" and @resource-id="com.tencent.wework:id/elq"]']
